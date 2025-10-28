@@ -1,0 +1,56 @@
+[
+  {
+    "match": 3,
+    "group": "B",
+    "teams": "Canada #1 vs TBD",
+    "date": "2026-06-12",
+    "time": "19:00:00",
+    "stadium": "Toronto Stadium",
+    "attendance": 40000
+  },
+  {
+    "match": 21,
+    "group": "L",
+    "teams": "TBD vs TBD",
+    "date": "2026-06-17",
+    "time": "19:00:00",
+    "stadium": "Toronto Stadium",
+    "attendance": 40000
+  },
+  {
+    "match": 33,
+    "group": "E",
+    "teams": "TBD vs TBD",
+    "date": "2026-06-20",
+    "time": "19:00:00",
+    "stadium": "Toronto Stadium",
+    "attendance": 40000
+  },
+  {
+    "match": 46,
+    "group": "L",
+    "teams": "TBD vs TBD",
+    "date": "2026-06-23",
+    "time": "19:00:00",
+    "stadium": "Toronto Stadium",
+    "attendance": 40000
+  },
+  {
+    "match": 62,
+    "group": "I",
+    "teams": "TBD vs TBD",
+    "date": "2026-06-26",
+    "time": "19:00:00",
+    "stadium": "Toronto Stadium",
+    "attendance": 40000
+  },
+  {
+    "match": 83,
+    "group": "K",
+    "teams": "K runners-up vs L runners-up",
+    "date": "2026-07-02",
+    "time": "19:00:00",
+    "stadium": "Toronto Stadium",
+    "attendance": 40000
+  }
+]
