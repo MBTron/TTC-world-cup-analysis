@@ -7530,12 +7530,12 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">¶</a></h2><ol>
 <li><a href="#introduction">Introduction</a></li>
-<li><a href="#the-questions">The Questions</a></li>
-<li><a href="#how-this-analysis-works">How This Analysis Works</a></li>
-<li><a href="#geographic-analysis-finding-routes-to-bmo-field">Geographic Analysis: Finding Routes to BMO Field</a></li>
-<li><a href="#service-reliability-analysis">Service Reliability Analysis</a></li>
-<li><a href="#capacity-analysis">Capacity Analysis</a></li>
-<li><a href="#the-verdict">The Verdict</a></li>
+<li><a href="#questions-were-looking-to-answer">Questions we're looking to answer</a></li>
+<li><a href="#how-this-analysis-works">How this analysis works</a></li>
+<li><a href="#geographic-analysis-finding-routes-to-bmo-field">Geographic analysis: finding routes to BMO Field</a></li>
+<li><a href="#service-reliability-analysis">Service reliability analysis</a></li>
+<li><a href="#capacity-analysis">Capacity analysis</a></li>
+<li><a href="#the-verdict">The verdict</a></li>
 <li><a href="#recommendations">Recommendations</a></li>
 <li><a href="#references">References</a></li>
 </ol>
@@ -7593,8 +7593,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="How-this-analysis-works">How this analysis works<a class="anchor-link" href="#How-this-analysis-works">¶</a></h1><p>All the code for this analysis is in this Jupyter notebook, so you can follow along step-by-step or run it yourself. I've also built some helper functions in the <code>src/</code> folder to keep things clean—things like calculating distances between coordinates, processing transit schedules, and computing headway statistics.</p>
-<p>*What I'm using:</p>
+<h1 id="How-this-analysis-works">How this analysis works<a class="anchor-link" href="#How-this-analysis-works">¶</a></h1><p>All the code for this analysis is in this Jupyter notebook, so you can follow along step-by-step or run it yourself. I've also built some helper functions in the <code>src/</code> folder (see my <a href="https://github.com/MBTron/TTC-world-cup-analysis">GitHub</a>) to keep things clean. These function do things like calculate distances between coordinates, processing of transit schedules, and computing headway statistics.</p>
+<p>What I'm using:</p>
 <ul>
 <li><strong>GTFS data</strong> from Toronto Open Data (the TTC's official schedule and route information)</li>
 <li><strong>Python + Pandas</strong> for data crunching</li>
@@ -7627,7 +7627,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Auto-reload modules when they change (fixes the caching problem)</span>
@@ -7665,18 +7665,6 @@ a.anchor-link {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>c:\Users\mibruhje\Documents\Projects\transit-data\TTC-world-cup-analysis\src\data_load.py:25: DtypeWarning: Columns (4,7) have mixed types. Specify dtype option on import or set low_memory=False.
-  trips = pd.read_csv(gtfs_dir / "trips.txt")
-c:\Users\mibruhje\Documents\Projects\transit-data\TTC-world-cup-analysis\src\data_load.py:27: DtypeWarning: Columns (5) have mixed types. Specify dtype option on import or set low_memory=False.
-  stop_times = pd.read_csv(gtfs_dir / "stop_times.txt")
-c:\Users\mibruhje\Documents\Projects\transit-data\TTC-world-cup-analysis\src\data_load.py:31: DtypeWarning: Columns (0) have mixed types. Specify dtype option on import or set low_memory=False.
-  shapes = pd.read_csv(gtfs_dir / "shapes.txt")
 </pre>
 </div>
 </div>
