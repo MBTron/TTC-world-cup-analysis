@@ -24,7 +24,7 @@ def stops_per_route(daily_trips, stop_times):
     """
     merged = daily_trips.merge(stop_times, on="trip_id")
     return merged.groupby("route_id")['stop_id'].nunique().to_dict()
-
+1
 def get_routes_by_mode(routes, selected_mode_code) -> list: 
     """
     Returns a list of route_ids for the selected mode code.
